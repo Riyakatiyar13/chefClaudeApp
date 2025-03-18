@@ -1,0 +1,356 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  sans-serif;
+}
+
+body{
+  background-color: #f4f7ef;
+}
+.container{
+ 
+  width: 100%;
+  background-color: #f4f7ef;
+  height: 100vh;
+  
+  align-items: center;
+  justify-content: center;
+  
+
+}
+.header-section {
+  width: 100%;
+  height: 5vw;
+  background-color: #ffffff;
+align-items: center;
+justify-content: center;
+  display: flex;
+}
+.header-section img {
+  
+  height: 5vw;
+  width: 5vw;
+  padding: 1vw;
+}
+.header-section h1 {
+font-size: 2vw;
+color: #2B283A;
+}
+.myrecipe {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  padding: 3vw;
+}
+.myinput{
+  display: flex;
+  padding: 2vw;
+  width: 100%;
+}
+.myinput input{
+  border: none;
+  height: 2vw;
+  min-width: 40%;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+ 
+  box-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1)
+ 
+}
+.myinput button{
+padding: 5px 20px;
+margin-top: 10px;
+margin-bottom: 10px;
+border: none;
+background-color: black;
+color: #e0e0e0;
+border-radius: 8px;
+
+}
+.recipe-item{
+  margin-left: 2.5vw;
+}
+.recipe-item h2{
+  font-size: 2.5vw;
+}
+.recipe-item ul{
+  margin-left: 1vw;
+  padding-top: 2vw;
+  padding-bottom: 3vw;
+  color: #2f2e36;
+  font-weight: 400;
+  
+}
+.recipe-item ul li {
+  padding: 4px;
+}
+.recipeContainer {
+  background-color: #dadada;
+  height: 18vh;
+  width: 42%;
+  display: flex;
+  margin-left: 2.5vw;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 4px;
+ 
+}
+.recipeContainer .left{
+  display: flex;
+  flex-direction: column;
+
+}
+.recipeContainer .left p {
+  font-size: 1.2vw;
+  color: #2f2e36;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+.recipeContainer .right button {
+padding: 10px 20px;
+border: none;
+background-color: chocolate;
+margin-left: 5px;
+border-radius: 4px;
+margin-top: 5px;
+}
+#recommend {
+  margin-inline: 4rem;
+  
+}
+#recommend h2{
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+}
+.suggested-recipe-container {
+  font-size: 0.9rem;
+}
+.suggested-recipe-container p{
+  padding-bottom: 1rem;
+}
+.suggested-recipe-container h3{
+  padding-bottom: 1rem;
+}
+.suggested-recipe-container ul {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+ }
+.suggested-recipe-container ul li{
+  margin-inline: 1rem;
+}
+.suggested-recipe-container ol {
+ padding-top: 1rem;
+ padding-bottom: 1rem;
+}
+.suggested-recipe-container ol li{
+  margin-inline: 1rem;
+}
+#ins {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+/* Responsive Styles */
+
+/* 📱 Small Phones (max-width: 320px) */
+@media (max-width: 320px) {
+  .header-section {
+    height: auto;
+    padding: 0.8rem;
+    flex-direction: column;
+  }
+
+  .header-section h1 {
+    font-size: 1rem;
+  }
+
+  .header-section img {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .myinput {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .myinput input {
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+
+  .myinput button {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .recipeContainer {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .recipeContainer .left p {
+    font-size: 0.9rem;
+  }
+
+  .recipeContainer .right button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+
+/* 📱 Mid-size Phones (max-width: 540px) */
+@media (max-width: 540px) {
+  .header-section {
+    height: auto;
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-section h1 {
+    font-size: 1.3rem;
+  }
+
+  .header-section img {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .myinput {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .myinput input {
+    width: 100%;
+    font-size: 1rem;
+    padding: 18px;
+  }
+
+  .myinput button {
+    width: 100%;
+    padding: 10px;
+  }
+  .recipe-item h2{
+    font-size: 1rem;
+  }
+  .recipeContainer {
+    width: 95%;
+    padding: 15px;
+    text-align: center;
+  }
+  .recipeContainer .left p{
+    font-size: 0.8rem;
+  }
+  .recipeContainer .right button {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .suggested-recipe-container {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* 📲 Tablets (541px - 768px) */
+@media (min-width: 541px) and (max-width: 768px) {
+  .header-section {
+    height: auto;
+    padding: 1.5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .header-section img {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .myinput {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .myinput input {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 14px;
+  }
+
+  .myinput button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .recipeContainer {
+    width: 80%;
+    text-align: center;
+  }
+
+  .recipe-item {
+    margin-left: 0;
+    
+  }
+
+  .recipeContainer .left p {
+    font-size: 1.1rem;
+  }
+
+  .recipeContainer .right button {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+}
+
+/* 💻 Larger Screens (769px and above) */
+@media (min-width: 769px) {
+  .header-section {
+    height: 5vw;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header-section h1 {
+    font-size: 2vw;
+  }
+
+  .header-section img {
+    height: 5vw;
+    width: 5vw;
+  }
+
+  .myinput {
+    flex-direction: row;
+    
+  }
+
+  .myinput input {
+    width: 40%;
+    font-size: 1.2rem;
+  }
+
+  .myinput button {
+    padding: 10px 20px;
+  }
+
+  .recipeContainer {
+    width: 42%;
+    height: 18vh;
+    display: flex;
+    justify-content: space-between;
+  }
+}
