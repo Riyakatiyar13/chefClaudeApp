@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import image2 from './Assets/react.svg';
+import image2 from './assets/react.svg';
 import Header from './Component/Nav';
 import Ingredient from './component/Input';
 import './index.css'
